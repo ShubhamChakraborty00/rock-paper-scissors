@@ -1,10 +1,10 @@
 function getComputerChoice() {
-    var randomNumber = Math.random();
+    var randomNumber = Math.floor(Math.random() * 3);
     var computerChoice = "";
-    if (randomNumber <= 1/3) {
+    if (randomNumber == 0) {
         computerChoice = "rock";
     }
-    else if (randomNumber <= 2/3) {
+    else if (randomNumber == 1) {
         computerChoice = "paper";
     }
     else {
